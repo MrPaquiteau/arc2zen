@@ -1,0 +1,296 @@
+{
+  "_comment": "Chrome Web Store ID -> addons.mozilla.org slug. Every entry was checked against the AMO API. Mozilla's official mapping (api/v5/addons/browser-mappings) and an exact-name AMO search are used as fallbacks at runtime.",
+  "extensions": {
+    "aeblfdkhhhdcdjpifhhbdiojplfjncoa": {
+      "name": "1Password",
+      "amo": "1password-x-password-manager"
+    },
+    "ammjkodgmmoknidbanneddgankgfejfh": {
+      "name": "7TV",
+      "amo": "7tv-extension"
+    },
+    "gighmmpiobklfepjocnamgkkbiglidom": {
+      "name": "AdBlock",
+      "amo": "adblock-for-firefox"
+    },
+    "cfhdojbkjhnklbpkdaibdccddilifddb": {
+      "name": "Adblock Plus",
+      "amo": "adblock-plus"
+    },
+    "bgnkhhnnamicmpeenaelnjfhikgbkllg": {
+      "name": "AdGuard AdBlocker",
+      "amo": "adguard-adblocker"
+    },
+    "ienfalfjdbdpebioblfackkekamfmbnh": {
+      "name": "Angular DevTools",
+      "amo": "angular-devtools"
+    },
+    "jdkknkkbebbapilgoeccciglkfbmbnfm": {
+      "name": "Apollo Client Devtools",
+      "amo": "apollo-developer-tools"
+    },
+    "ajopnjidmegmdimjlfnijceegpefgped": {
+      "name": "BetterTTV",
+      "amo": "betterttv"
+    },
+    "nngceckbapebfimnlniiiahkandclblb": {
+      "name": "Bitwarden",
+      "amo": "bitwarden-password-manager"
+    },
+    "mpbjkejclgfgadiemmefgebjfooflfhl": {
+      "name": "Buster",
+      "amo": "buster-captcha-solver"
+    },
+    "lckanjgmijmafbedllaakclkaicjfmnk": {
+      "name": "ClearURLs",
+      "amo": "clearurls"
+    },
+    "pmjeegjhjdlccodhacdgbgfagbpmccpe": {
+      "name": "Clockify",
+      "amo": "clockify-time-tracker"
+    },
+    "bhlhnicpbhignbdhedgjhgdocnmhomnp": {
+      "name": "ColorZilla",
+      "amo": "colorzilla"
+    },
+    "mdjildafknihdffpkfmmpnpoiajfjnjd": {
+      "name": "Consent-O-Matic",
+      "amo": "consent-o-matic"
+    },
+    "fhcgjolkccmbidfldomjliifgaodjagh": {
+      "name": "Cookie AutoDelete",
+      "amo": "cookie-autodelete"
+    },
+    "eimadpbcbfnmbkopoojfekhnkhdbieeh": {
+      "name": "Dark Reader",
+      "amo": "darkreader"
+    },
+    "fdjamakpfbbddfjaooikfcpapjohcfmg": {
+      "name": "Dashlane",
+      "amo": "dashlane"
+    },
+    "enamippconapkdmgfgjchkhakpfinmaj": {
+      "name": "DeArrow",
+      "amo": "dearrow"
+    },
+    "ldpochfccmkkmhdbclfhpagapcfdljkj": {
+      "name": "Decentraleyes",
+      "amo": "decentraleyes"
+    },
+    "cofdbpoegempjloogbagkncekinflcnj": {
+      "name": "DeepL",
+      "amo": "deepl-translate"
+    },
+    "inlikjemeeknofckkjolnjbpehgadgge": {
+      "name": "Distill Web Monitor",
+      "amo": "distill-web-monitor-ff"
+    },
+    "bkdgflcldnnnapblkhphbgpggdiikppg": {
+      "name": "DuckDuckGo Privacy Essentials",
+      "amo": "duckduckgo-for-firefox"
+    },
+    "ponfpcnoihfmfllpaingbgckeeldkhle": {
+      "name": "Enhancer for YouTube",
+      "amo": "enhancer-for-youtube"
+    },
+    "pioclpoplcdbaefihamjohnefbikjilc": {
+      "name": "Evernote Web Clipper",
+      "amo": "evernote-web-clipper"
+    },
+    "fadndhdgpmmaapbmfcknlfgcflmmmieb": {
+      "name": "FrankerFaceZ",
+      "amo": "frankerfacez"
+    },
+    "mlomiejdfkolichcflejclcbmpeaniij": {
+      "name": "Ghostery",
+      "amo": "ghostery"
+    },
+    "kbfnbcaeplbcioakkpcpgfkobkghlhen": {
+      "name": "Grammarly",
+      "amo": "grammarly-1"
+    },
+    "bmnlcjabgnpnenekpadlanbbkooimhnj": {
+      "name": "Honey",
+      "amo": "honey"
+    },
+    "fihnjjcciajhdojfnbdddfaoknhalnja": {
+      "name": "I don't care about cookies",
+      "amo": "i-dont-care-about-cookies"
+    },
+    "pejdijmoenmkgeppbflobdenhhabjlaj": {
+      "name": "iCloud Passwords",
+      "amo": "icloud-passwords"
+    },
+    "bnomihfieiccainjcjblhegjgglakjdd": {
+      "name": "ImprovedTube",
+      "amo": "youtube-addon"
+    },
+    "neebplgakaahbhdphmkckjjcegoiijjo": {
+      "name": "Keepa",
+      "amo": "keepa"
+    },
+    "oboonakemofpalcgghocfoadofidjkkk": {
+      "name": "KeePassXC-Browser",
+      "amo": "keepassxc-browser"
+    },
+    "bfogiafebfohielmmehodmfbbebbbpei": {
+      "name": "Keeper",
+      "amo": "keeper-password-manager"
+    },
+    "oldceeleldhonbafppcapldpdifcinji": {
+      "name": "LanguageTool",
+      "amo": "languagetool"
+    },
+    "hdokiejnpimakedhajhdlcegeplioahd": {
+      "name": "LastPass",
+      "amo": "lastpass-password-manager"
+    },
+    "kajibbejlbohfaggdiogboambcijhkke": {
+      "name": "Mailvelope",
+      "amo": "mailvelope"
+    },
+    "nkbihfbeogaeaoehlefnkodbefgpgknn": {
+      "name": "MetaMask",
+      "amo": "ether-metamask"
+    },
+    "laookkfknpbbblfpciffpaejjkokdgca": {
+      "name": "Momentum",
+      "amo": "momentumdash"
+    },
+    "fooolghllnmhmmndgjiamiiodkpenpbb": {
+      "name": "NordPass",
+      "amo": "nordpass-password-management"
+    },
+    "fjoaledfpmneenckfbpdfhkmimnjocfa": {
+      "name": "NordVPN",
+      "amo": "nordvpn-proxy-extension"
+    },
+    "bkhaagjahfmjljalopjnoealnfndnagc": {
+      "name": "Octotree",
+      "amo": "octotree"
+    },
+    "dneaehbmnbhcippjikoajpoabadpodje": {
+      "name": "Old Reddit Redirect",
+      "amo": "old-reddit-redirect"
+    },
+    "chphlpgkkbolifaimnlloiipkdnihall": {
+      "name": "OneTab",
+      "amo": "onetab"
+    },
+    "bfnaelmomeimhlpmgjnjophhpkkoljpa": {
+      "name": "Phantom",
+      "amo": "phantom-app"
+    },
+    "pkehgijcmpdhfbdbbnkijodmdjhbjlgp": {
+      "name": "Privacy Badger",
+      "amo": "privacy-badger17"
+    },
+    "ghmbeldphafepmbegfdlkpapadhbakde": {
+      "name": "Proton Pass",
+      "amo": "proton-pass"
+    },
+    "jjjlfihdbkofpcpgidpmfldjnahanmff": {
+      "name": "Proton VPN",
+      "amo": "proton-vpn-firefox-extension"
+    },
+    "ldgfbffkinooeloadekpmfoklnobpien": {
+      "name": "Raindrop.io",
+      "amo": "raindropio"
+    },
+    "fmkadmapgofadopljbjfkapdkoienihi": {
+      "name": "React Developer Tools",
+      "amo": "react-devtools"
+    },
+    "kbmfpngjjgdllneeigpgjifpgocmfgmb": {
+      "name": "Reddit Enhancement Suite",
+      "amo": "reddit-enhancement-suite"
+    },
+    "lmhkpmbekcpmknklioeibfkpmmfibljd": {
+      "name": "Redux DevTools",
+      "amo": "reduxdevtools"
+    },
+    "hlepfoohegkhhmjieoechaddaejaokhf": {
+      "name": "Refined GitHub",
+      "amo": "refined-github-"
+    },
+    "gebbhagfogifgggkldgodflihgfeippi": {
+      "name": "Return YouTube Dislike",
+      "amo": "return-youtube-dislikes"
+    },
+    "mnjggcdmjocbbbhaepdhchncahnbgone": {
+      "name": "SponsorBlock",
+      "amo": "sponsorblock"
+    },
+    "clngdbkpkpeebahjckkjfobafhncgmne": {
+      "name": "Stylus",
+      "amo": "styl-us"
+    },
+    "gfbliohnnapiefjpjlpjnehglfpaknnc": {
+      "name": "Surfingkeys",
+      "amo": "surfingkeys_ff"
+    },
+    "kfidecgcdjjfpeckbblhmfkhmlgecoff": {
+      "name": "Svelte DevTools",
+      "amo": "svelte-devtools"
+    },
+    "iaiomicjabeggjcfkbimgmglanimpnae": {
+      "name": "Tab Session Manager",
+      "amo": "tab-session-manager"
+    },
+    "dhdgffkkebhmkfjojejmpbldmpobfkfo": {
+      "name": "Tampermonkey",
+      "amo": "tampermonkey"
+    },
+    "oocalimimngaihdkbihfgmpkcpnmlaoa": {
+      "name": "Teleparty",
+      "amo": "netflix-party-is-now-teleparty"
+    },
+    "jldhpllghnbhlbpcmnajkpdmadaolakh": {
+      "name": "Todoist",
+      "amo": "todoist"
+    },
+    "oejgccbfbmkkpaidnkphaiaecficdnfn": {
+      "name": "Toggl Track",
+      "amo": "toggl-button-time-tracker"
+    },
+    "cjpalhdlnbpafiamejdnhcphjbkeiagm": {
+      "name": "uBlock Origin",
+      "amo": "ublock-origin"
+    },
+    "ddkjiahejlhfcafbddmgiahcphecmpfh": {
+      "name": "uBlock Origin Lite",
+      "amo": "ublock-origin-lite"
+    },
+    "khncfooichmfjbepaaaebmommgaepoid": {
+      "name": "Unhook",
+      "amo": "youtube-recommended-videos"
+    },
+    "nffaoalbilbmmfgbnbgppjihopabppdk": {
+      "name": "Video Speed Controller",
+      "amo": "videospeed"
+    },
+    "dbepggeogbaibhgnhhndojpepiihcmeb": {
+      "name": "Vimium",
+      "amo": "vimium-ff"
+    },
+    "jinjaccalgkegednnccohejagnlnfdag": {
+      "name": "Violentmonkey",
+      "amo": "violentmonkey"
+    },
+    "nhdogjmejiglipccpnnnanhbledajbpd": {
+      "name": "Vue.js devtools",
+      "amo": "vue-js-devtools"
+    },
+    "gppongmhjkpfnbhagpmjfkannfbllamg": {
+      "name": "Wappalyzer",
+      "amo": "wappalyzer"
+    }
+  },
+  "_comment_builtin": "Chrome extensions whose feature Zen already has: reported instead of installed.",
+  "builtin": {
+    "aapbdbdomjkkjkaonfhkkikfgjllcleb": "Zen translates pages itself (translate icon in the address bar)",
+    "ghbmnnjooekpmoecnnnilnnbdlolhkhi": "Not needed outside Chrome (Google Docs Offline)",
+    "nmmhkkegccagdldgiimedpiccmgmieda": "Not needed outside Chrome (Chrome Web Store Payments)",
+    "mhjfbmdgcfjbbpaeojofohoefgiehjai": "Zen has a built-in PDF viewer"
+  }
+}
