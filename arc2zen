@@ -1,0 +1,8 @@
+#!/bin/sh
+# Run arc2zen straight from a clone, no install needed.
+DIR="$(cd "$(dirname "$0")" && pwd)"
+if ! command -v python3 >/dev/null 2>&1; then
+  echo "arc2zen needs Python 3. Install the Command Line Tools with:  xcode-select --install"
+  exit 1
+fi
+PYTHONPATH="$DIR/src${PYTHONPATH:+:$PYTHONPATH}" exec python3 -m arc2zen "$@"

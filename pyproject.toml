@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arc2zen"
+version = "0.1.0"
+description = "Move everything from Arc to Zen: spaces, pinned tabs, folders, favorites, bookmarks, history, passwords, cookies, extensions and settings."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+keywords = ["arc", "zen", "browser", "migration", "firefox"]
+classifiers = [
+  "Environment :: Console",
+  "Operating System :: MacOS",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+]
+dependencies = []
+
+[project.scripts]
+arc2zen = "arc2zen.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/MrPaquiteau/arc2zen"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+arc2zen = ["js/*.js", "data/*.json"]
