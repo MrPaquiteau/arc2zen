@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import signal
 import sys
 from pathlib import Path
 
@@ -12,6 +13,17 @@ from . import ui
 from .migrate import (STEP_LABELS, STEPS, Migration, MigrationAborted, Options,
                       resolve_target_profile, save_report)
 from .platforms import UnsupportedPlatform, current
+
+
+def _interrupt(signum, frame):
+    raise KeyboardInterrupt
+
+
+def quit_zen_on_hangup() -> None:
+    """Closing the terminal or a plain `kill` must still take Zen out of migration mode: turn
+    them into a Ctrl-C, so the migration's cleanup quits Zen before arc2zen exits."""
+    for sig in (signal.SIGHUP, signal.SIGTERM):
+        signal.signal(sig, _interrupt)
 
 
 def parse_steps(only: str, skip: str) -> list:
@@ -159,6 +171,7 @@ def main(argv=None) -> int:
                    open_tabs=not a.no_open_tabs)
     migration = Migration(platform, data, opts)
     print()
+    quit_zen_on_hangup()
     try:
         report = migration.execute()
     except MigrationAborted as e:

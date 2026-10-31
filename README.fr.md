@@ -7,7 +7,7 @@ Espaces, onglets épinglés, dossiers, favoris, signets, historique complet, mot
 [English](README.md)
 
 ```sh
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/MrPaquiteau/arc2zen/main/run.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/MrPaquiteau/arc2zen/v0.1.0/run.sh)"
 ```
 
 Rien à installer et aucune dépendance : il suffit de Python 3, fourni avec les outils en ligne de
@@ -65,13 +65,37 @@ décrites dans le [README anglais](README.md#how-to-use-it), par exemple `--dry-
   `~/Library/Application Support/zen-arc2zen-backups/` avant toute modification.
 - **Rien ne quitte votre Mac.** Les seuls appels réseau vont vers `addons.mozilla.org`, pour trouver
   et télécharger les extensions.
-- **Pilotage local uniquement.** Pendant la migration, Zen tourne avec Marionette, le protocole
-  d'automatisation intégré à Firefox, sur `127.0.0.1`. Une icône de robot s'affiche dans la barre
-  d'adresse, et Zen redémarre normalement à la fin.
+- **Pilotage local uniquement, le temps de la migration.** Voir
+  [le mode migration](#le-mode-migration-marionette) pour savoir exactement ce qui est ouvert, quand
+  et à qui.
+- **Versions figées.** La commande ci-dessus lance une version publiée (`v0.1.0`), jamais ce qui se
+  trouve sur `main` à ce moment-là.
 - **Extensions :** une extension n'est installée que si elle figure dans la liste fournie (vérifiée
   sur addons.mozilla.org), dans la correspondance officielle Chrome→Firefox de Mozilla, ou si son
   nom correspond exactement à une extension **mise en avant par Mozilla**. Jamais de copie publiée
   par un inconnu.
+
+### Le mode migration (Marionette)
+
+Pour passer par les API de Zen plutôt que d'écrire dans ses bases de données, arc2zen démarre Zen avec
+Marionette, le protocole d'automatisation intégré à Firefox, avec l'accès système activé. Ce qui pilote
+Zen dans ce mode peut y exécuter du code privilégié, donc faire tout ce que Zen peut faire : lire ses
+mots de passe et ses cookies, lire et écrire vos fichiers, lancer des programmes. Voici exactement
+quand, et à qui, c'est ouvert :
+
+- **Quand :** uniquement pendant la migration. Cela commence à l'étape *Starting Zen in migration
+  mode* et se termine quand arc2zen quitte Zen à l'étape *Saving and restarting Zen*, en général
+  quelques minutes plus tard. Zen est ensuite rouvert normalement, sans Marionette, et arc2zen
+  n'enregistre aucun réglage qui pourrait le réactiver. Une icône de robot s'affiche dans la barre
+  d'adresse tant que ce mode est actif.
+- **À qui :** seulement aux programmes qui tournent sur ce Mac. Marionette écoute sur
+  `127.0.0.1:2828`, jamais sur le réseau. Il n'accepte qu'une session, qu'arc2zen ouvre quelques
+  secondes après le démarrage de Zen, et refuse toute autre connexion jusqu'à la fin. Si un autre
+  programme passait avant, arc2zen ne pourrait pas se connecter : il s'arrête et vous demande de
+  quitter Zen.
+- **Si arc2zen est interrompu** (Ctrl-C, terminal fermé, `kill`), il quitte Zen avant de s'arrêter.
+  Seul un arrêt forcé (`kill -9`, un plantage) peut laisser Zen en mode migration. Si vous voyez
+  l'icône de robot en dehors d'une migration, quittez Zen (⌘Q) et rouvrez-le.
 
 ### La fenêtre du trousseau macOS
 
